@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Price Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        body{
+            background-color: #f2f2f2;
+        }
+        .container{
+            background-color: white;
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form-group{
+            margin-top: 20px;
+        }
+        .form-control{
+            border-radius: 10px;
+        }
+        .btn{
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .fa{
+            font-size: 30px;
+            color: #f2f2f2;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Car Price Prediction</h1>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="yearofRegistration">Year of Registration</label>
+                <input type="number" class="form-control" id="yearofRegistration" name="yearofRegistration" placeholder="Enter Year of Registration">
+            </div>
+            <div class="form-group">
+                <label for="powerPS">Power PS</label>
+                <input type="number" class="form-control" id="powerPS" name="powerPS" placeholder="Enter Power PS">
+            </div>
+            <div class="form-group">
+                <label for="kilometer">Kilometer</label>
+                <input type="number" class="form-control" id="kilometer" name="kilometer" placeholder="Enter Kilometer">
+            </div>
+            <div class="form-group">
+                <label for="monthofRegistration">Month of Registration</label>
+                <input type="number" class="form-control" id="monthofRegistration" name="monthofRegistration" placeholder="Enter Month of Registration">
+            </div>
+            <div class="form-group">
+                <label for="namelen">Name Length</label>
+                <input type="number" class="form-control" id="namelen" name="namelen" placeholder="Enter Name Length">
+            </div>
+            <div class="form-group">
+                <label for="gearbox_feat">Gearbox</label>
+                <select class="form-control" id="gearbox_feat" name="gearbox_feat">
+                    <option value="manuell">Manuell</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fuelType_feat">Fuel Type</label>
+                <select class="form-control" id="fuelType_feat" name="fuelType_feat">
+                    <option value="andere">Andere</option>
+                    <option value="benzin">Benzin</option>
+                    <option value="cng">CNG</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="elektro">Elektro</option>
+                    <option value="hybrid">Hybrid</option>
+                    <option value="lpg">LPG</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
